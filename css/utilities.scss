@@ -1,0 +1,19 @@
+$primary-color:#294C5B;
+$secundary-color:#E66748;
+$text-color:#646464;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rokkitt', serif;
+    
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
