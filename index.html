@@ -20,6 +20,13 @@
     
     <header>
         <div class="container">
+
+            <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div><!--social-media-->
+
             <div class="logo">
                 <a href="#">
                     <img src="img/saturn-logo.png">
@@ -29,18 +36,22 @@
             </div><!--logo-->
     
             <nav class="menu-desktop">
+                
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#services">SERVIÇOS</a></li>
+                    <li><a href="#about">SOBRE</a></li>
+                    <li><a href="#contact">CONTATO</a></li>
                 </ul>
             </nav><!--menu-desktop-->
     
             <nav class="menu-mobile">
+                <div class="hamburguer-button">
+                    <i class="fas fa-bars"></i>
+                </div><!--hamburguer-button-->
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#services">SERVIÇOS</a></li>
+                    <li><a href="#about">SOBRE</a></li>
+                    <li><a href="#contact">CONTATO</a></li>
                 </ul>
             </nav><!--menu-mobile-->
 
@@ -68,7 +79,7 @@
         </div><!--container-->
     </section><!--bg-->
 
-    <section class="rocket">
+    <section class="rocket" id="about">
         <div class="rocket-element">
             <img src="img/rocket.png">
         </div><!--rocket-element-->
@@ -160,5 +171,95 @@
             </div><!--analysis-img-->
         </div><!--container-->
     </section><!--execute-->
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-circle">
+                <div class="title-style">
+                    <h3>Services</h3>
+                    <span></span>
+                    
+                </div><!--title-style-->
+            </div><!--services-circle-->
+
+            <div class="services-social">
+                <div class="services-social-single" 
+                style="background-image: url('/img/google-ads.png');"></div><!--services-social-single-->
+
+                <div class="services-social-single"
+                style="background-image: url('/img/facebook-ads.png');"></div><!--services-social-single-->
+
+                <div class="services-social-single"
+                style="background-image: url('/img/instagram.png');"> </div><!--services-social-single-->
+
+                <div class="services-social-single"
+                style="background-image: url('/img/youtube.png');"></div><!--services-social-single-->
+            </div><!--services-social-->
+        </div><!--container-->
+    </section><!--services-->
+
+    <footer>
+        <div class="container">
+            <div class="footer-column">
+                <div class="contact">
+                    <h3>Contact us</h3>
+                    <li><i class="far fa-building"></i> 4312 Street, City, Country</li>
+                    <li><i class="fas fa-mobile-alt"></i> (999) 123-4567</li>
+                    <li><i class="far fa-envelope"></i> mail@domain.com</li>
+                </div><!--contact-->
+            </div><!--footer-column-->
+
+            <div class="footer-column" id="contact">
+                <div class="form">
+                    <form>
+                        <h3>Send a message</h3>
+                        <input type="text" placeholder="Name"/>
+                        <input type="email" placeholder="E-mail"/>
+                        <textarea placeholder="Message"></textarea>
+                        <button type="submit">SEND <i class="far fa-paper-plane"></i></button>
+                    </form>
+                </div><!--form-->
+            </div><!--footer-column-->
+
+            <div class="footer-column">
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div><!--social-media-->
+            </div><!--footer-column-->
+        </div><!--container-->
+    </footer>
+
+    <!--JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+            $('.hamburguer-button').click(()=>{
+                $('nav.menu-mobile > ul').slideToggle(()=>{
+                    $('ul > li > a').click(()=>{
+                        $('nav.menu-mobile > ul').slideUp()
+                    })
+                })
+                
+            });
+
+            /* SCROLL SUAVE */
+    
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                
+                var id = $(this).attr('href'),
+                        targetOffset = $(id).offset().top;
+                        
+                $('html, body').animate({ 
+                    scrollTop: targetOffset - 100
+                }, 500);
+            });
+                
+            /* */
+        });
+    </script>
 </body>
 </html>

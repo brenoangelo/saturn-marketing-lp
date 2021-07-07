@@ -6,6 +6,10 @@
   font-family: 'Rokkitt', serif;
 }
 
+html,body{
+  height: 100%;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
