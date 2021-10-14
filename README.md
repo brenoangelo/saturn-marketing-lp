@@ -1,10 +1,10 @@
 <h1 align="center">
     <a href="https://brenoangelo.github.io/saturn-marketing-lp/">Saturn Marketing</a>
 </h1>
-<h3 align="center">Uma Landing Page com o objetivo de vender cursos de idiomas.</h3>
-<p align="center">Uma landing page projetada para vender cursos de idiomas, desenvolvida com animações para o menu com jQuery e toda a parte visual feita com o pré processador Scss.</p>
+<h3 align="center">Uma Landing Page com o objetivo de vender serviços de marketing</h3>
+<p align="center">Uma landing page projetada para vender serviços de marketing, desenvolvida com animações para o menu com jQuery e toda a parte visual feita com o pré processador Scss.</p>
 <h1 align="center" >
-  <img alt="now idiomas" title="#NowIdiomas" src="./img/github/saturn-marketing-1.png" />
+  <img alt="saturn marketing" title="#SaturnMarketing" src="./github/saturn-marketing-1.png" />
 </h1>
 
 
@@ -14,7 +14,7 @@
 
 
 <h1 align="center">
-  <img alt="now idiomas" title="#NowIdiomas" src="./img/github/saturn-marketing-2.png" />
+  <img alt="saturn marketing" title="#SaturnMarketing" src="./github/saturn-marketing-2.png" />
 </h1>
 
 
